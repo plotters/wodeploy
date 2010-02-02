@@ -1,97 +1,29 @@
-AppImage: WOImage {
-	alt = "Applications";
-	filename = appImageName;
-	height = 42;
-	width = 124;
-	border = 0;
-}
-AppLink: WOHyperlink {
-	action = ApplicationsPageClicked;
-}
+Content : WOComponentContent {}
 
-AppleImage: WOImage {
-	filename = appleImageName;
-	height = 36;
-	width = 30;
-	align = "right";
-	border = 0;
-}
-
-Content : WOComponentContent {
-	
-}
-
-BackgroundContainer: WOGenericContainer {
-	elementName = "TD";
-	vAlign = "top";
-        width = "49%";
-        background = backgroundImageSrc;
-}
-
-BarImage: WOImage {
-	filename = barImageName;
-	height = 26;
-	width = 724;
-	border = 0;
-}
-
-HelpImage: WOImage {
-	alt = "Monitor Help";
-	filename = helpImageName;
-	height = 42;
-	width = 119;
-	border = 0;
-}
-
-HelpLink: WOHyperlink {
-	action = HelpPageClicked;
-}
-
-HostImage: WOImage {
-	alt = "Hosts";
-	filename = hostImageName;
-	height = 42;
-	width = 119;
-	border = 0;
-}
-HostLink: WOHyperlink {
-	action = HostsPageClicked;
-}
-
-MigrationImage: WOImage {
-	alt = "Apache Migration";
-	filename = migrationImageName;
-	height = 42;
-	width = 124;
-	border = 0;
-}
-
-MigrationLink: WOHyperlink {
-	action = MigrationPageClicked;
-}
-
-PrefImage: WOImage {
-	alt = "Monitor Preferences";
-	filename = prefImageName;
-	height = 42;
-	width = 119;
-	border = 0;
-}
-PrefLink: WOHyperlink {
-	action = PrefsPageClicked;
-}
-
-SiteImage: WOImage {
-	alt = "Site Config";
-	filename = siteImageName;
-	height = 42;
-	width = 119;
-	border = 0;
-}
-SiteLink: WOHyperlink {
-	action = ConfigurePageClicked;
-}
-
-Title : WOString {
+PAGE_TITLE : WOString {
   value = pageTitle;
+}
+
+APP_LINK: WOHyperlink {
+	pageName = "ApplicationsPage";
+}
+
+HOSTS_LINK: WOHyperlink {
+	pageName = "HostsPage";
+}
+
+HELP_LINK: WOHyperlink {
+	pageName = "HelpPage";
+}
+
+MIGRATION_LINK: WOHyperlink {
+	pageName = "MigrationPage";
+}
+
+PREFS_LINK: WOHyperlink {
+	pageName = "PrefsPage";
+}
+
+SITE_LINK: WOHyperlink {
+	pageName = "ConfigurePage";
 }

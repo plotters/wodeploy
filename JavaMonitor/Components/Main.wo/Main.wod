@@ -14,8 +14,6 @@ LoginSucceeded: WOConditional {
     negate = YES;
 }
 
-ApplicationsPage: ApplicationsPage {}
-
 PasswordField: WOPasswordField {
     value = password;
 }

@@ -1,10 +1,11 @@
-<webobject name = "NavPage">
-<h2>Applications</h2>
-<span class = "error">
-  <webobject name = "MessageString" />
-</span>
-<table border = "1" cellpadding = "6" cellspacing = "1" bgcolor = "#E0E0F8">
-  <tr bgcolor = "#C0C0D8">
+<webobject name="NAV_PAGE">
+	<h2>Applications</h2>
+	<span class="error">
+		<webobject name="MESSAGE_STRING" />
+	</span>
+
+<table border="1" cellpadding="6" cellspacing="1" bgcolor="#E0E0F8">
+  <tr bgcolor="#C0C0D8">
     <th>Application</th>
     <th>Instances Running</th>
     <th>Instances Configured</th>
@@ -13,41 +14,34 @@
     <th>&nbsp;</th>
     <th>&nbsp;</th>
   </tr>
-  <webobject name = "ApplicationsRepetition">
+  <webobject name="ApplicationsRepetition">
     <tr>
       <td>
-        <webobject name = "AppIsRunning">
-          <b>
-            <webobject name = "ApplicationNameLink" />
-          </b>
-        </webobject>
-        <webobject name = "AppIsNOTRunning">
-          <webobject name = "ApplicationName" />
-        </webobject>
+        <webobject name="APP_NAME_LINK" /> <webobject name="APP_IS_RUNNING">(running)</webobject>
       </td>
       <td>
-        <webobject name = "RunningInstancesCount" />
+        <webobject name="RunningInstancesCount" />
       </td>
       <td>
-        <webobject name = "TotalInstancesCount" />
+        <webobject name="TotalInstancesCount" />
       </td>
       <td>
-        <webobject name = "AppDetailsLink">
-          <webobject name = "DetailViewButton" />
+        <webobject name="AppDetailsLink">
+          <webobject name="DetailViewButton" />
         </webobject>
       </td>
       <td>
-        <webobject name = "ConfigureLink">
-          <webobject name = "ConfigButton" />
+        <webobject name="ConfigureLink">
+          <webobject name="ConfigButton" />
         </webobject>
       </td>
       <td>
-        <webobject name = "DeleteLink">
-          <webobject name = "DeleteButton" />
+        <webobject name="DeleteLink">
+          <webobject name="DeleteButton" />
         </webobject>
       </td>
       <td>
-        <webobject name = "BounceLink">
+        <webobject name="BounceLink">
           Bounce
         </webobject>
       </td>
@@ -55,12 +49,12 @@
   </webobject>
 </table>
 <hr />
-<webobject name = "AddApplicationForm">
+<webobject name="AddApplicationForm">
   Add Application Named:
-  <webobject name = "ApplicationNameTextField" />
-  <webobject name = "AddApplicationSubmitButton" />
+  <webobject name="NEW_APP_NAME_FIELD" />
+  <webobject name="AddApplicationSubmitButton" />
   <br />
-  <font size = "-1">
+  <font size="-1">
     Note: Application names may only contain alpha-numeric or '-'.
     <br />
     <br />
@@ -69,12 +63,12 @@
     Application names are used by the adaptor for load-balancing.
   </font>
 </webobject>
-<webobject name = "ShouldOfferLogout">
+<webobject name="ShouldOfferLogout">
   <center>
     <br />
     <br />
-    <font size = "-1">
-      <webobject name = "LogoutLink">Log Out</webobject>
+    <font size="-1">
+      <webobject name="LogoutLink">Log Out</webobject>
     </font>
     <br />
   </center>

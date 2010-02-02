@@ -16,6 +16,10 @@ import com.webobjects.monitor._private.MInstance;
 import com.webobjects.monitor._private.MObject;
 import com.webobjects.monitor._private.String_Extensions;
 
+/**
+ * The list of applications on the front page.
+ */
+
 public class AdminApplicationsPage extends ApplicationsPage {
 
     public static final String DISPLAY_NAME = "displayName";

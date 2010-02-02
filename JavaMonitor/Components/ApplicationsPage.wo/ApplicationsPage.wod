@@ -11,26 +11,19 @@ AppDetailsLink: WOHyperlink {
     action = appDetailsClicked;
 }
 
-AppIsNOTRunning: WOConditional {
-    condition = currentApplication.isRunning;
-    negate = YES;
-}
-
-AppIsRunning: WOConditional {
+APP_IS_RUNNING: WOConditional {
     condition = currentApplication.isRunning;
 }
 
-ApplicationName: WOString {
-    value = currentApplication.name;
-}
-
-ApplicationNameLink: WOHyperlink {
+APP_NAME_LINK: WOHyperlink {
     string = currentApplication.name;
     href = hrefToApp;
     target = "new";
+    disabled = currentApplicationIsNotRunning;
 }
 
-ApplicationNameTextField: WOTextField {
+
+NEW_APP_NAME_FIELD : WOTextField {
     size = "20";
     value = newApplicationName;
 }
@@ -76,11 +69,11 @@ DetailViewButton: WOImage {
     border = "0";
 }
 
-MessageString: WOString {
+MESSAGE_STRING: WOString {
 	value = session.message;
 }
 
-NavPage: NavigationPage {
+NAV_PAGE: NavigationPage {
 	currentPage = APP_PAGE;
 	title = "Applications";
 }

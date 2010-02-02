@@ -1,0 +1,55 @@
+/**
+ * CSS component for JavaMonitor.
+ */
+
+body {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 12px;
+	margin: 15px;
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+.error {
+	text-align: center;
+	color: red;
+	margin: 10px;
+	display: block;
+	font-weight: bold;
+}
+
+
+#navigation {
+	
+}
+
+#navigation a {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	font-size: 15px;
+
+}
+
+#navigation a:hover {
+	background-color: rgb( 230, 230, 230 );
+}
+
+#footer {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 20px;
+	padding: 5px;
+	margin-top: 10px;
+	background-color: gray;
+	color: white;
+}
